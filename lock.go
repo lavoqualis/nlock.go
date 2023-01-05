@@ -13,6 +13,7 @@ type Lock struct {
 	kv          nats.KeyValue
 	onRelease   func(key string)
 	onLost      func(key string)
+	onAcquired  func(l *Lock)
 	rev         uint64
 	managerName string
 	ttl         time.Duration
@@ -72,7 +73,9 @@ func (l *Lock) register() error {
 	l.setState("registerd")
 	l.rev = rev
 	logger.Debug("registerd '%s' with rev %d", l.name, rev)
-
+	if l.onAcquired != nil {
+		l.onAcquired(l)
+	}
 	return nil
 }
 

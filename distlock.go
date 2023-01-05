@@ -33,6 +33,9 @@ func (lm *Manager) createLock(key string) (*Lock, error) {
 		return nil, err
 	}
 	l.onRelease = lm.removeLock
+	l.onAcquired = func(l *Lock) {
+		logger.Info("lock acquired %s", l.name)
+	}
 	lm.locks[key] = l
 	return l, nil
 }
