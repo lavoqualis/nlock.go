@@ -199,3 +199,7 @@ func (l *Lock) Release() {
 		l.onRelease(l.name)
 	}
 }
+
+func (l *Lock) HasAcquisition() bool {
+	return l.state == "registerd" && l.rev > 0
+}
