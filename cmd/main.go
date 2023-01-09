@@ -7,7 +7,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/lavoqualis/go-distlock"
+	"github.com/lavoqualis/go-nlock"
 	"github.com/nats-io/nats.go"
 )
 
@@ -65,7 +65,7 @@ func main() {
 	}
 	host, _ := os.Hostname()
 	id := fmt.Sprintf("%s-%d", host, os.Getpid())
-	m, err := distlock.New(id, kv)
+	m, err := nlock.New(id, kv)
 	if err != nil {
 		log.Fatalf("could not create lock managager: %v", err)
 	}
