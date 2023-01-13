@@ -6,6 +6,14 @@ SPDX-License-Identifier: MIT
 
 # distributed (by nats.io) locks
 
+
+# Installation
+```shell
+go get github.com/lavoqualis/nlock.go
+```
+
+
+# Demo
 ```shell
 docker run -it --rm -p 4222:4222 --name nats-server -v "$($pwd)/contrib:/contrib" nats:latest -c /contrib/test-server.conf
 
