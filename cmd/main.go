@@ -11,7 +11,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/lavoqualis/go-nlock.go"
+	"github.com/lavoqualis/nlock.go"
 	"github.com/nats-io/nats.go"
 )
 
