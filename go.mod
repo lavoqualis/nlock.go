@@ -1,4 +1,8 @@
-module github.com/lavoqualis/go-nlock
+// SPDX-FileCopyrightText: 2023 KåPI Tvätt AB <peter.magnusson@rikstvatt.se>
+//
+// SPDX-License-Identifier: CC0-1.0
+
+module github.com/lavoqualis/go-nlock.go
 
 go 1.19
 

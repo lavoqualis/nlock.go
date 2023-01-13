@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 KåPI Tvätt AB <peter.magnusson@rikstvatt.se>
+
+SPDX-License-Identifier: MIT
+-->
+
 # distributed (by nats.io) locks
 
 ```shell

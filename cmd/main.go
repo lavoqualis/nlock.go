@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 KåPI Tvätt AB <peter.magnusson@rikstvatt.se>
+//
+// SPDX-License-Identifier: MIT License
+
 package main
 
 import (
@@ -7,7 +11,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/lavoqualis/go-nlock"
+	"github.com/lavoqualis/go-nlock.go"
 	"github.com/nats-io/nats.go"
 )
 

@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 KåPI Tvätt AB <peter.magnusson@rikstvatt.se>
+//
+// SPDX-License-Identifier: MIT License
+
 package nlock
 
 import (
